@@ -1,0 +1,14 @@
+Topics
+1. Big O notation
+2. Analyzing performance of arrays and objects
+3. Problem solving approach - thinking framework
+4. Problem solving patterns - concrete patterns
+5. Recursion
+6. Searching algorithms
+7. Sorting algorithms - bubble, selection, insertion, merge, quick, radix sort
+8. Introduction to data structures - comparison
+9. Data structures - singly linked lists, doubly linked lists, stacks and queues, binary search trees, tree traversal, binary heaps, hash tables, graphs, graph traversal, 
+10. Djikstra's algorithm
+
+- Pre-requisite lectures for each section.
+- Chrome snippets for running Javascript code.
