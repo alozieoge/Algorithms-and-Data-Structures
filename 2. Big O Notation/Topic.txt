@@ -1,0 +1,70 @@
+Objectives:
+1. Need for Big O notation.
+2. What is Big O?
+3. Simplify Big O expressions.
+4. Time and space complexity.
+5. Evaluate time and space complexity using Big O notation.
+6. Logarithms.
+
+Big O notation is a system for:
+- generalizing, classifying, comparing
+- a piece of code against other code
+- in terms of its performance
+- using numerical values
+
+Why Big O?
+1. Precise code performance matters in: 
+- Technical interviews
+- Code challenges
+- Large dataset (1 million)
+
+2. Discuss trade-off between different approaches. 
+3. Code debugging, inefficient code blocks, causing crashes due to memory...
+4. Interviews
+
+B. Timing Code
+- Sum of integers up to n.
+
+Better Code?
+- Faster
+- Less memory-intensive
+- Readability
+- Brevity 
+
+Problems with using runtime as performance measure:
+- Different machines will record different times. 
+- The same machine will record different times. 
+- For fast algorithms, time or speed measurements might not be precise enough.
+
+C. Counting operations
+- Count the number of simple operations the computer has to perform.
+- Independent of computer hardware specs, OS, ...
+
+- Not counting the precise number of operations but on the 'big picture' of operations.
+  i.e. how does the algorithm time grow as the input grows.
+  
+D. Big O
+- How the runtime of an algorithm grows as the input grows.
+- Only cares about the broad trends.
+- Concerned with worst-case scenario / upper bound / order of magnitude for runtime.
+
+- An algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant * f(n), as n increases.
+  where f(n) could be:
+  - linear: f(n) = n
+  - quadratic: f(n) = n**2 (nested loops)
+  - constant: f(n) = 1
+  - something else ...
+  
+E. Simplifying Big O Expressions
+- Constants don't matter.
+- Smaller / secondary terms don't matter.
+
+Big O Shorthands
+1. Arithmetic operations are constant. 
+2. Variable assignment is constant. 
+3. Accessing elements in an array by index or in an object by key is constant.
+4. In a loop, complexity = length of the loop * complexity of what happens inside the loop.
+
+F. Space Complexity
+
+
