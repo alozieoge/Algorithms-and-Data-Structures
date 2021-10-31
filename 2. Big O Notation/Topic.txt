@@ -74,4 +74,8 @@ Rules of Thumb for Space Complexity in Javascript
 2. Strings require O(n) space (n = string length)
 3. Reference types are generally O(n) space (n = length of array or n = no. of keys in objects).
 
-
+G. Logarithms
+- Logarithm is the inverse of exponent.
+- Certain search algorithms have log time complexity, O(log n). 
+- Efficient sorting algorithms involve log.
+- Recursion sometimes involve log space complexity. 
