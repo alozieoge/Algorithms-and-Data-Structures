@@ -66,5 +66,12 @@ Big O Shorthands
 4. In a loop, complexity = length of the loop * complexity of what happens inside the loop.
 
 F. Space Complexity
+- How much additional memory is required to allocate to run the code in an algorithm. 
+- Auxiliary space complexity refers to the space required by the algorithm only, not including the space taken up by the inputs.
+
+Rules of Thumb for Space Complexity in Javascript
+1. Most primitives (boolean, numbers, undefined, null) are constant space, O(1).
+2. Strings require O(n) space (n = string length)
+3. Reference types are generally O(n) space (n = length of array or n = no. of keys in objects).
 
 
