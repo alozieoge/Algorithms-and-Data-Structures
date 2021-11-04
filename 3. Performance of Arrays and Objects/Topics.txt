@@ -1,0 +1,49 @@
+Objectives
+1. How objects and arrays work via Big O.
+2. Adding elements to an array. 
+3. Runtime for array and objects, and their built-in methods.
+
+A. Objects
+- Unordered data structures.
+- Stores info in (key, value) pairs.
+
+Use objects when:
+- No order is required.
+- Fast acces, insertion and removal - O(1) time.
+- Searching in objects (searching if a value is contained in an object) takes linear time - O(n) time.
+
+Object methods in Javascript
+- Object.values(): O(n)
+- Object.keys(): O(n)
+- Object.entries(): O(n)
+- hasOwnProperty(): O(1)
+
+
+B. Arrays
+- Ordered lists. 
+
+Use arrays when:
+- Order is required. 
+- Need fast access / insertion.
+
+- Access: O(1)
+- Searching: O(n)
+- Insertion: Depends on location of insertion i.e. at the beginning or end of the array 
+  - beginning O(n) because of the re-indexing required. 
+  - end O(1)
+- Removal: Depends on location of removal i.e. at the beginning or end of the array 
+  - beginning O(n) because of the re-indexing required. 
+  - end O(1)
+  
+Array methods in Javascript (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- push(): O(1)
+- pop(): O(1)
+- shift(): O(n) - requires re-indexing of all the array elements. 
+- unshift(): O(n) - requires re-indexing of all the array elements. 
+- concat(): O(n) - appends an array to another array.
+- slice(): O(n) - returns a subset of an array. Worst case returns all elements as a slice.
+- splice(): O(n) - inserts an element with or without replacement at an index in an array. Without replacement requires re-indexing.
+- sort(): O(n * log n) - sorting usually requires going over each array element more than one time. 
+- forEach() / map() / filter() / reduce(): O(n) - looping through each array element to perform a function on each of them.
+
+
