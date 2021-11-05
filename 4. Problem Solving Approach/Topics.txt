@@ -1,0 +1,28 @@
+Objectives
+1. What is an algorithm?
+2. Plan / approach to solve algorithms. 
+3. Compare and contrast problem solving patterns e.g. frequency counters, 2 pointer problems, divide and conquer.
+
+A. Algorithm
+- An algorithm is a process or set of steps to accomplish a certain task. 
+
+Why do we need to know algorithms. 
+- Everything we do in programming involves some algorithm
+- Foundation for successful developer and problem solver
+- Technical interviews
+
+How to improve
+1. Devise a plan for solving problems. 
+2. Master common problem-solving patterns. 
+
+Problem Solving Strategies
+1. Understand the problem. 
+2. Explore concrete examples.
+3. Break it down. 
+4. Solve / simplify.
+5. Look back and refactor.
+
+
+1. Understand the Problem
+
+
