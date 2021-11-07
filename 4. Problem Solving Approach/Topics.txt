@@ -1,0 +1,75 @@
+Objectives
+1. What is an algorithm?
+2. Plan / approach to solve algorithms. 
+3. Compare and contrast problem solving patterns e.g. frequency counters, 2 pointer problems, divide and conquer.
+
+A. Algorithm
+- An algorithm is a process or set of steps to accomplish a certain task. 
+
+Why do we need to know algorithms. 
+- Everything we do in programming involves some algorithm
+- Foundation for successful developer and problem solver
+- Technical interviews
+
+How to improve
+1. Devise a plan for solving problems. 
+2. Master common problem-solving patterns. 
+
+Problem Solving Strategies
+1. Understand the problem. 
+2. Explore concrete examples.
+3. Break it down. 
+4. Solve / simplify.
+5. Look back and refactor.
+
+
+1. Understand the Problem
+- Don't dive right in to attempt solving the problem. 
+- Don't start typing code or writing before taking a step back to understand the question. 
+
+Questions to ask
+- Can I restate the problem in my own words?
+- What are the inputs to the problem?
+- What are the outputs that should come out from the solution?
+- Can the outputs be determined from the inputs? Do I have enough info to sove the problem?
+- How should I label the important data that are part of the problem?
+
+
+2. Explore Concrete Examples
+- Examples can help you understand the problem better.
+- Examples provide sanity checks that your eventual solution works how it should.
+- Learn more info by doing examples.
+  - User stories
+  - Unit tests
+  
+Steps:
+- Start with simple examples
+- Progress to more complex examples
+- Explore edge cases:
+  - examples with empty inputs
+  - examples with invalid inputs
+
+
+3. Break It Down
+- Explicitly write the actual solution steps as comments or TODO:
+- Communicate your thinking process and the steps you're trying to take.
+  - Forces you to think about the code you'll write before you start writing it.
+  - Helps catch lingering conceptual issues or misunderstanding before diving in. 
+  - Worry about details e.g. language syntax, later.
+  - Shows you know what you're doing and have the right approach/idea to solvig the problem.
+
+
+4. Solve or Simplify
+- Solve the problem if you can or else solve a simpler problem. 
+  - Ignore the part that's too complicated and focus on every other thing that you can do.
+  - Don't get stuck; make some progress.
+  - You might gain insight into the harder part if you start simple.
+  
+Steps:
+- Find the core difficulty in what you're trying to do.
+- Temporarily ignore that difficulty. 
+- Write a simplified solution.
+- Incorporate that difficulty back in.
+  
+
+
