@@ -26,6 +26,7 @@ Problem Solving Strategies
 1. Understand the Problem
 - Don't dive right in to attempt solving the problem. 
 - Don't start typing code or writing before taking a step back to understand the question. 
+- Ask questions of the interview.
 
 Questions to ask
 - Can I restate the problem in my own words?
@@ -71,5 +72,20 @@ Steps:
 - Write a simplified solution.
 - Incorporate that difficulty back in.
   
+
+5. Look Back and Refactor
+- Look back and reflect on the individual components / syntax in your code. 
+  - How it looks, reads, structured, ...
+  - Readability / Efficiency / Maintinability
+  
+Questions
+- Can you check the result?
+- Can you derive the result differently?
+- Can you understand it at a glance? Is it intuitive? Does it make sense?
+- Can you use the result or method for some other problem? Reusability.
+- Can you improve the performance of your solution? Time and Space complexity. 
+- Can you think of other ways to refactor? Style guidelines, indentation, in-line documentation / docstrings.
+- How have other people solved this problem? Ask!, search online.
+
 
 
