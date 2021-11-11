@@ -24,8 +24,15 @@ Steps:
 
 
 3. Sliding Window
+- Create a window which can either be an array or number from one position to another.
+- Depending on a certain condition, the window either increases or closes (and a new window is created). 
+- Useful for keeping track of a continous subset of data in an array / string. 
+- Reduces time complexity when using nested loops from O(n^2) to O(n).
 
 4. Divide and Conquer
+- Dividing a dataset into smaller chunks and then repeating a process with a subset of the data. 
+- Can significantly decrease time complexity. 
+- Commonly implemented in sorting and searching algorithms.
 
 5. Dynamic Programming
 
