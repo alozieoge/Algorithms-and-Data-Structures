@@ -34,7 +34,6 @@ Steps:
 - Can significantly decrease time complexity. 
 - Commonly implemented in sorting and searching algorithms.
 
-
 5. Dynamic Programming
 
 6. Greedy Algorithm
