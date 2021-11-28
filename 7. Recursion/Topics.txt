@@ -1,0 +1,59 @@
+Recursion is a different way of thinking about writing solutions to a problem, contrary to Iteration.
+
+Objectives:
+1. Define recursion and how it can be used. 
+2. Understand the 2 essential components of a recursive function. 
+3. Visualize the call stack to better debug and understand recursive functions. 
+4. Use helper method recursion and pure recursion to solve more difficult problems. 
+
+What is recursion?
+- Recursion is a process / function that calls itself.
+
+Why is it important?
+- It is everywhere e.g. 
+  - JSON.parse / JSON.stringify
+  - document.getElementById and DOM traversal algorihtms
+  - Object traversal
+  - Custom complex data structures
+  - Cleaner alternative to iteration sometimes. 
+
+What happens behind the scenes in JS when a function is called recursively?
+- Call stack : A data structure that manages what happens when functions are invoked.
+- When a function is invoked / called, it is placed at the top of the call stack.
+- When JS sees the `return` keyword / when a function ends, the compiler will remove (pop) the top-most item in the call stack. 
+
+Why do I care?
+- You're used to functions being pushed on the call stack and popped off when they are done.
+- In recursive functions, we keep pushing the function uinto the call stack.
+- We therefore need an exit criteria.
+
+How recursive functions work?
+- Invoke the same function repeatedly with a different input each time until you reach the base case. 
+- Base case: Condition when the recursion ends.
+
+2 essential parts of a recursive function
+1. Different input
+2. Base case
+
+Common uses of recursion
+- Count down
+- Sum of a range
+- Factorial
+
+Where things go wrong in writing recursive functions
+1. No base case / wrong base case. 
+   - Code runs indefinitely (maximum call stack size is usually limited by the compiler).
+
+2. Forgetting to return / returning the wrong thing in the base case or recursion statement. 
+   - Code runs indefinitely.
+
+3. Stack overflow : maximum call stack size exceeded.
+
+
+Helper Method Recursion
+- A design pattern that is commonly used with recursion where a helper function is recursively called within an outer function that is not recursive. 
+- Commonly used to populate a collection / array.
+- The result / output array is not reset / initialized everytime the helper method is called.
+
+Pure Recursion
+- Recursion without using a helper function.
