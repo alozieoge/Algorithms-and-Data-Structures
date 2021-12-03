@@ -1,3 +1,7 @@
+How to improve
+1. Devise a plan for solving problems. 
+2. Master common problem-solving patterns. 
+
 Objective:
 - Master common problem-solving patterns.
 
@@ -15,24 +19,26 @@ Patterns are programming mechanisms / blueprints that guide you in writing code 
 - Creating pointers or values that correspond to an index or position in an array / string and move towards the beginning, end or middle based on a certain condition.
 - Reduces the time complexity.
 - Very efficient for solving problems with minimal space complexity.
+- Works well with sorted arrays.
 
 Steps:
 - Start with 2 pointers at any 2 positions in the sorted array. 
 - Evaluate the condition using the variables at each pointer. 
-- If not satisfied, move one pointer in the 'direction' that would help satisfy the condition
+- If not satisfied, move one pointer in the 'direction' that would help satisfy the condition.
 - Repeat until condition is satisfied or array items are exhausted.
 
 
 3. Sliding Window
 - Create a window which can either be an array or number from one position to another.
 - Depending on a certain condition, the window either increases or closes (and a new window is created). 
-- Useful for keeping track of a continous subset of data in an array / string. 
+- Useful for keeping track of a continuous subset of data in an array / string. 
 - Reduces time complexity when using nested loops from O(n^2) to O(n).
 
+
 4. Divide and Conquer
-- Dividing a dataset into smaller chunks and then repeating a process with subsets of the data until the sought condition is satisfied or the original dataset is exhausted. 
+- Divide a dataset into smaller chunks and then repeating a process with subsets of the data until the sought condition is satisfied or the original dataset is exhausted. 
 - Can significantly decrease time complexity. 
-- Commonly implemented in sorting and searching algorithms.
+- Commonly implemented in sorting (quick sort and merge sort) and searching (binary search, binary search trees) algorithms.
 
 
 5. Dynamic Programming
