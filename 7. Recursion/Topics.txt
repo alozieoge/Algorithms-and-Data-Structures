@@ -60,6 +60,6 @@ Pure Recursion
 
 
 Big O for Recursion:
-- Time complexity of a recursive function is the number of recursive calss you need to make, relative to the input. 
+- Time complexity of a recursive function is the number of recursive calls you need to make, relative to the input. 
 - Space complexity of a recursive function is the maximum number of functions in the call stack at a given time, since the call stack requires memory. 
 
