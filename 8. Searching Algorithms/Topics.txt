@@ -1,0 +1,75 @@
+- Searching involves finding if an item exists in an array or list of items. 
+
+Objectives:
+- What is a searching algorithm. 
+- Implement linear search on arrays. 
+- Implement binary search on srted arrays. 
+- Implement naive string searching algorithm. 
+- Implement KMP string searching algorithm. 
+
+
+1. Linear Search:
+- Involves searching for an item / value by looking at every element in the array and checking if it is the item we want. 
+- Simplest form of search. 
+- Javascript methods that implement linear search:
+  - .indexOf()
+  - .includes()
+  - .find()
+  - .findIndex()
+
+Big O for Linear Search
+- Best case: O(1)
+- Worst case: O(n)
+- Average: O(n)
+
+
+2. Binary Search:
+- Much faster form of search than linear search. 
+- Rather than eliminating one element at a time, you can eliminate half of the remaining elements at a time. 
+- Only works with sorted arrays (ascending, descending, alphabetical, chronological, ...) 
+- Binary search implements the 'Divide and Conquer' problem solving pattern.
+
+Big O for Binary Search
+- Best case: O(1)
+- Worst case: O(log n)
+- Average: O(log n)
+
+- For an input array of 16 elements, it takes a maximum of 4 steps to find an element.
+  - Worst case: log_2 16 = 4. 
+- For an input array of 32 elements, it takes a maximum of 5 steps to find an element. 
+  - Worst case: log_2 32 = 5.
+
+
+3. Naive String Search:
+- Searching for sub-strings in a longer string. 
+- Involves stepping through each character in the longer string and comparing it to the characters in the shorter string
+
+- Looking ahead in nested loops: 
+  - allows you to look ahead / access the next element(s) in the outer array / loop while still in the inner array / loop.
+    
+    for (var i = 0; i < outer.length; i++) {
+      for (var j = 0; j < inner.length; j++) {
+        if (inner[j] != outer[i + j]) { // Look ahead in outer array using i + j
+          ...
+        }
+      }
+    }
+
+Big O for Naive String Search
+- Worst case: O(nm)
+
+
+4. KMP String Search:
+- Knutt-Morris-Pratt algorithm offers an improvement over the naive string search approach. 
+- Published in 1977. 
+- It intelligently traverses the longer string to reduce the amount of redundant searching. 
+
+- To determine how far we can shift the shorter string: 
+  a. Pre-compute the longest (proper) suffix in the matched portion of the longer string 
+  b. that matches a (proper) prefix in the matched portion of the shorter string, 
+  c. then shift the shorter string along accordingly.
+  d. This tabulation should be done before you start looking for the shorter string in the longer string.
+
+Big O for KMP
+- Time complexity: O(n + m)
+- Space complexity: O(m)
