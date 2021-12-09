@@ -28,4 +28,15 @@ Built-in Javascript Sorting
   - If it returns a +ve number, a should come after b. 
   - If it returns 0, a and b are the same as far as the sort is concerned.
   
+
+Bubble Sort
+- A sorting algorithm where the largest values bubble up to the top by swapping position, one at a time for each pass.
+- Involves a nested loop (pass) in an outer loop, bounded by the size of the input array.
+
+- Can be optimized for nearly sorted arrays by keeping a record of whether values were swapped in the previous pass.
+
+Bubble Sort Time complexity:
+- Unoptimized: O(n^2)
+- Optimized for nearly sorted arrays: O(n)
+  
   
