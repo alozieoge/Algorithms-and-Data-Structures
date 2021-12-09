@@ -29,7 +29,9 @@ Built-in Javascript Sorting
   - If it returns 0, a and b are the same as far as the sort is concerned.
   
 
-Bubble Sort
+Comparison-based Sorting Algorithms
+
+1. Bubble Sort
 - A sorting algorithm where the largest values bubble up to the top by swapping position, one at a time for each pass.
 - Involves a nested loop (pass) in an outer loop, bounded by the size of the input array.
 
