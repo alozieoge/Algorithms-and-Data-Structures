@@ -16,7 +16,11 @@ Objectives:
 - Compare above sorting algorithms.
 
 Built-in Javascript Sorting
-- JS default `Array.sort()` method sorts according to each element's Unicode code-point value, according to the string equivalent of each element. 
+- JS default `Array.sort()` method sorts according to each element's Unicode code-point value, according to the string equivalent of each element.
+  - Converts each array element to a string. 
+  - Converts each string character to its Unicode. 
+  - Sort by Unicode.
+  - Return sorted array.
 
 - You can customize how it works by providing an additional (optional) comparator function as an argument to the sort() method. 
 - The comparator looks at pairs of eleents (a, b) and determines their sort order based on the return value. 
