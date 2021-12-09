@@ -1,0 +1,31 @@
+- Sorting is the process of re-arranging the items in a collection e.g. array, so that the items are in some kind of order. 
+  - Ascending magnitude
+  - Descending magnitude
+  - Alphabetical
+  - Chronological ...
+  
+Why learn sorting
+1. Sorting is an incredibly common task; good to know how it works. 
+2. There are many different ways to sort things, each with their advantages and disadvantages. 
+3. Technical interviews.
+
+Objectives:
+- Implement bubble sort. 
+- Implement selection sort
+- Implement insertion sort.
+- Compare above sorting algorithms.
+
+Built-in Javascript Sorting
+- JS default `Array.sort()` method sorts according to each element's Unicode code-point value, according to the string equivalent of each element.
+  - Converts each array element to a string. 
+  - Converts each string character to its Unicode. 
+  - Sort by Unicode.
+  - Return sorted array.
+
+- You can customize how it works by providing an additional (optional) comparator function as an argument to the sort() method. 
+- The comparator looks at pairs of eleents (a, b) and determines their sort order based on the return value. 
+  - If it returns a -ve number, a should come before b.
+  - If it returns a +ve number, a should come after b. 
+  - If it returns 0, a and b are the same as far as the sort is concerned.
+  
+  
