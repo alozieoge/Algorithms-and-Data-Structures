@@ -40,5 +40,17 @@ Comparison-based Sorting Algorithms
 Bubble Sort Time complexity:
 - Unoptimized: O(n^2)
 - Optimized for nearly sorted arrays: O(n)
+
+
+2. Selection Sort
+- Similar to bubble sort, but it finds the smallest (minimum) value and places it into sorted position, at the end of each pass.
+- Involves finding the index of the minimum value during each pass (inner loop). 
+- If the index of the "new" minimum value in a pass is not equal to the index of the initial minimum value at the start of the pass, swap! 
+
+Selection Sort Time Complexity:
+- O(n^2)
+
+- Can't be optimized for nearly-sorted arrays like Bubble sort. 
+- Only better than Bubble sort when minimizing the number of swap operations, for memory purpose.
   
   
