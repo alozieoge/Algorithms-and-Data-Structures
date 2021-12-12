@@ -54,3 +54,24 @@ Selection Sort Time Complexity:
 - Only better than Bubble sort when minimizing the number of swap operations, for memory purpose.
   
   
+3. Insertion Sort
+- Builds up the sort by gradually creating a larger left portion that is always sorted.
+- Involves taking the elements in the array one step at a time and inserting them in the correct sorted portion.
+- Does not require swapping of elements, only moving already sorted elements to the right to allow insertion of the current element.
+
+- Insertion sort ensures that you only have to compare the current element to the previous element to decide if it requires sorting.
+- Because you have sorted all other leftward elements as you go along the array. 
+
+Insertion Sort Time Complexity:
+- Worst case: O(n^2)
+- Best case: O(n)
+- Average case: O(n^2)
+
+- Works well with nearly sorted arrays. 
+  - Fewer shifting of elements occur.
+
+- Works well in sorting online (continuously-fed or streaming) data since the left portion is always sorted. 
+  - Any new element will only be inserted where (if) it needs to go.
+  
+- Performs poorly in sorting a reverse-sorted array.
+  - Insertion will always occur at the front of the array.
