@@ -79,3 +79,29 @@ Time Complexity:
 
 Space complexity = O(log n)
 - Number of decompositions to get the pivot index = log n
+
+
+3. Radix Sort
+- A special sorting algorithm that works on a list of numbers (integers) or integer-representation of array elements - Integer sort.
+- Never makes comparison between elements. 
+- Exploits the fact that information about the size of a number is encoded in the number of digits.
+  - More digits means a bigger number. 
+  - Works in base 10.
+
+- Involves grouping numbers into buckets / bins based on the position of digits (units, tens, hundreds, thousands, ...) in the number.
+- Numbers in the bins are stored and retrieved by FIFO.
+
+Radix Sort Big O:
+Time complexity:
+- Best case = O(nk)
+- Average case = O(nk)
+- Worst case = O(nk)
+
+n = array length
+k = average number of digits (word size)
+
+- Radix sort should be theoretically more efficient than comparison sorting algorithms (merge sort, quick sort). 
+- However, if all the numbers n are distinct, then k has to be at least log(n) for a random-access machine to store them in memory
+  - Because of the limitations of how computers store numbers in memory, the best-case time complexity of radix sort might be O(n.log n).
+  
+Space complexity: O(n+k)
