@@ -1,0 +1,107 @@
+
+Objectives:
+- Understand the limitations of previous sorting algorithms. 
+- Implement merge sort
+- Implement quick sort. 
+- Implement radix sort.
+
+Previous sorting algorithms do not scale well to very large datasets.
+
+Faster sorting algorithms
+- Can improve time complexity from O(n^2) to O(n.logn).
+- Trade-off between efficiency and simplicity. 
+- More efficient sorting algorithms are much less simple and take longer to understand.
+
+
+1. Merge Sort
+- Merge sort is a combination of 3 things:
+  - Splitting
+  - Merging
+  - Sorting
+
+- Explots the fact that arrays of 0 or 1 element are always sorted.
+- Works by decomposing an array into smaller arrays of 0 or 1 element, then building up a newly sorted array. 
+  - Divide and Conquer
+  - Premise: It is easier to merge 2 sorted arrays than merging 2 unsorted arrays.
+
+Merge Sort Implementation
+- First implement a function for merging 2 sorted arrays. 
+- Given 2 sorted arrays, this helper function should create a new array which is also sorted and consists of all the elements in the 2 input arrays. 
+- This function should: 
+  - take O(n + m) time -> only iterate once over each item in each array.
+  - use O(n + m) space -> create a new array whose size is n + m.
+  - not modify the parameters passed to it.
+  
+Merge Sort Big O
+- Time Complexity: O(n.log n)
+- Space Complexity: O(n)
+
+- Merge sort will always split and merge all the elements in the input array, irrespective of the scenario. 
+- There are O(log n) decompositions. 
+  -The number of times that the input array will be split to reach all arrays with 0 or 1 element is log n.
+- There are O(n) comparisons per decompisition.
+
+
+2. Quick Sort
+- It also exploits the fact that arrays of 0 or 1 element are already sorted. 
+
+- Works by selecting 1 element (pivot) and finding the index where the pivot should end up in the sorted array. 
+  - Position all elements less than the pivot to the left of the pivot. 
+  - Position all elements greater than the pivot to the right of the pivot. 
+
+- Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot. 
+
+Pivot Helper Function:
+- Arranges the elements in an array on either side of a pivot. 
+
+- Given an array, the pivot helper function first designates an element as the pivot. 
+- It then re-arranges the elements in the array such that:
+  - all values less than the pivot are moved to the left of the pivot, 
+  - all values greater than the pivot are moved to the right of the pivot. 
+- The order of elements on either side of the pivot does not matter. 
+- Pivot helper function is applied 'in place' on the input array, without creating a new array. 
+- When complete, it returns the index of the pivot. 
+
+Picking a Pivot:
+- The runtime of the quick sort depends on the choice of pivot. 
+- Ideally, the pivot should be chosen as close as possible to the median of the dataset. 
+- For simplicity, always chose the pivot as the first element of the array. 
+
+Quick Sort Big O:
+Time Complexity:
+- Best case = O(n.log n)
+- Worst case = O(n^2)
+- Average case = O(n.log n)
+
+- The worst case for quick sort occurs when the pivot is always the minimum or the maximum element in the unsorted portion of the array at each recursion.
+- This usually happens when the array is already sorted and the first element is selected as the pivot in each recursion.
+- Avoid such scenario by random selection of pivot or selecting the median element in the array for each recursion.
+
+Space complexity = O(log n)
+- Number of decompositions to get the pivot index = log n
+
+
+3. Radix Sort
+- A special sorting algorithm that works on a list of numbers (integers) or integer-representation of array elements - Integer sort.
+- Never makes comparison between elements. 
+- Exploits the fact that information about the size of a number is encoded in the number of digits.
+  - More digits means a bigger number. 
+  - Works in base 10.
+
+- Involves grouping numbers into buckets / bins based on the position of digits (units, tens, hundreds, thousands, ...) in the number.
+- Numbers in the bins are stored and retrieved by FIFO.
+
+Radix Sort Big O:
+Time complexity:
+- Best case = O(nk)
+- Average case = O(nk)
+- Worst case = O(nk)
+
+n = array length
+k = average number of digits (word size)
+
+- Radix sort should be theoretically more efficient than comparison sorting algorithms (merge sort, quick sort). 
+- However, if all the numbers n are distinct, then k has to be at least log(n) for a random-access machine to store them in memory
+  - Because of the limitations of how computers store numbers in memory, the best-case time complexity of radix sort might be O(n.log n).
+  
+Space complexity: O(n+k)
