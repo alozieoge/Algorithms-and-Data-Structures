@@ -39,3 +39,4 @@ Instance methods
 Class methods
 - Provide utility / overall functionality for the class, but not necessarily to individual instances of the class.
 - Preceeded with the `static` keyword.
+- Cannot be called from a class instance / object.
