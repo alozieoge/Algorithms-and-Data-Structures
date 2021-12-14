@@ -1,0 +1,42 @@
+Data structures are collections of values, containing the relationships between these values and functions / operations that can be applied to them.
+
+Data Structures
+- Singly linked list
+- Doubly linked list
+- Stack
+- Queue
+- Binary heap
+- Trees
+- Graphs
+
+WHy so many?
+- Different data structures excel at different things. 
+- Some are highly specialised while others are commonly used e.g. arrays, objects.
+
+Why care?
+- Need to handle more specialized, complex data.
+- Potentially worked with some of them.
+- Technical interviews.
+
+
+ES2015 Class Syntax
+- Javascript is not originally an OOP language, but since ES2015, the `class` keyword was introduced to support OOP implementation.
+
+- A class is a blueprint / template for creating objects with pre-defined properties and methods. 
+- JS classes are built on prototypes, which inherit properties and methods from the Obect prototype.
+- JS prototypes allow you to add new properties and methods to already defined class constructors.
+
+Why classes?
+- We need to implement data structures as classes.
+
+Class instances
+- Instantiate objects from the class using the `new` keyword.
+
+Instance methods
+- Provide functionality for a specific instance of a class / object.
+- Best practise: Use instance methods to modify clss instance properties.
+
+Class methods
+- Provide utility / overall functionality for the class, but not necessarily to individual instances of the class.
+- Preceeded with the `static` keyword.
+- Cannot be called from a class instance / object.
