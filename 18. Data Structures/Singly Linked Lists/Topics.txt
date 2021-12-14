@@ -1,0 +1,129 @@
+Objectives:
+- What is a Singly Linked List?
+- Compare and contrast Linked Lists with Arrays.
+- Implement insertion, removal and traversal methods on Singly Linked Lists.
+
+1. What is a Linked List?
+- A data structure that contains a head (start), tail (end) and length property. 
+- It consists of nodes, where each node has a value and points to another node or null.
+
+- A Singly Linked List (SLL) comprises a bunch of nodes pointing to one another in 1 (single) direction.
+
+- Head node: 
+  - First node in a SLL. 
+  - No other node points to a head node.
+  
+- Tail node:
+  - Last node in a SLL.
+  - Points to null.
+  
+- To search for a value in a SLL, we have to traverse the nodes sequentially, starting from the head node, until the value is found or not. 
+- To insert a value at a point in a SLL, we have to first traverse the nodes sequentially until we get to the desired position and update the node pointer at the point of interest.
+
+
+2. Linked Lists vs Arrays
+Lists:
+- Do not have indices. 
+- Nodes are connected via a `next` pointer.
+- Does not support random access by index.
+
+Arrays:
+- Indexed in order.
+- Insertion and removal can be computationally expensive for large datasets. 
+- Can be quickly assessed at a specific index.
+
+
+3. Singly Linked List Class
+- A node is the fundamental building block in a SLL.
+- Can be implemented as a `Node` class.
+- The `Node` class contains the following properties:
+  - value = a number, string, array, ...
+  - next = a pointer / reference to the next node.
+
+- A Singly Linked List is a collection of nodes. 
+- It has a head, tail and length property.
+- In the `SinglyLinkedList` class definition by default: 
+  - head = null
+  - tail = null
+  - length = 0
+
+a. Push()
+- We can add a new node to a Singly Linked List by implementing a `push(value)` instance method. 
+- If the SLL is empty, this new node will be the head and tail.
+- Otherwise, the new node is added to the SLL nodes and will become the new tail by:
+  - Setting the next pointer of the existing SLL tail to be equal to the new node.
+  - Updating the SLL tail to become the new node.
+- Increment the SLL length by 1.
+- Return the updated SLL.
+
+b. Pop()
+- Removing the node at the end of the SLL.
+- Involves removing the tail node from the SLL, so that the 2nd last node becomes the new tail. 
+
+- If the SLL is empty, return undefined.
+- Involves traversing the SLL nodes, starting from the head node, until the 2nd last node and severing its link to the tail node.
+  - The 2nd last node then becomes the new tail node.
+- Decrement the SLL length by 1.
+- If the resulting SLL length is 0, set the SLL head and tail to null.
+- Return the popped tail node.
+
+c. Shift()
+- Removing the node at the beginning of the SLL. 
+- Involves removing the head node and the next node becomes the new head node.
+
+- If the SLL is empty, return undefined.
+- Identify the head node to be shifted.
+- Make the next node the new head node.
+- Decrement the SLL length by 1.
+- If the resulting SLL length is 0, set the SLL head and tail to null.
+- Return the shifted (old) head node.
+
+d. Unshift(value)
+- Insert a new node at the beginning of the SLL. 
+- Involves creating a new node and making it the head node of the SLL.
+
+- Create the new node.
+- If the SLL is empty, and make the new node to be the head and tail of the SLL.
+- Otherwise: 
+  - Make the new node point to the existing head node.
+  - Make the new node to be the head node of the SLL.
+- Increment the SLL length by 1.
+- Return the updated SLL.
+
+e. Get(index)
+- Retrieve the node by its position in the SLL. 
+- Involves traversing the nodes by index times and returning the node at that position.
+- Less efficient O(n) compared to Array indexing - O(1).
+
+- If the index is negative or greater than / equal to the length of the SLL, return null (out of range).
+- Starting with the head node,
+- Loop through the nodes until you reach the index
+- Return the node at the index position.
+
+f. Set(index, value)
+- Changes the value of the node at a specific position.
+
+- Use the `get(index)` function to find the specific node at that index. 
+- If the node is not found, return false.
+- Otherwise, set the value of that node to be the value passed to the function and return true.
+
+g. Insert(index, value)
+- Adds a new node to the SLL at a specific position in the SLL. 
+- Involves traversing the SLL nodes to the point of interest, linking the new node to the existing aft node and linking the existing pre node to the new node.
+- Other nodes are not affected. 
+
+- If the index is negative or greater than the length of the SLL, return false. 
+- If the index is equal to the length of the SLL, push the new node to the end of the SLL.
+- If the index = 0, unshift the new node to the start of the SLL. 
+- Create a new node with the value. 
+- Using the get method, access the node at index - 1.
+- Store the next property on that node.
+- Set / update the next property on that node to be the new node.
+- Set the next oroperty on the new node to be the saved node from the previous step.
+- Increment the length by 1. 
+- Return true.
+
+
+
+
+
