@@ -113,17 +113,27 @@ g. Insert(index, value)
 - Other nodes are not affected. 
 
 - If the index is negative or greater than the length of the SLL, return false. 
-- If the index is equal to the length of the SLL, push the new node to the end of the SLL.
-- If the index = 0, unshift the new node to the start of the SLL. 
+- If the index is equal to the length of the SLL, push a new node to the end of the SLL.
+- If the index = 0, unshift a new node to the start of the SLL. 
 - Create a new node with the value. 
 - Using the get method, access the node at index - 1.
 - Store the next property on that node.
 - Set / update the next property on that node to be the new node.
 - Set the next oroperty on the new node to be the saved node from the previous step.
-- Increment the length by 1. 
+- Increment the SLL length by 1. 
 - Return true.
 
+h. Remove(index)
+- Removes a node from a specific position in the SLL.
+- Involves re-linking the node before the to-be-removed node to the node after it.
 
+- If the index is negative or greater than / equal to the length of the SLL, return undefined. 
+- If the index is equal to the SLL length - 1, pop (pop returns the popped node).
+- If the index = 0, shift (shift returns the shifted head node). 
+- Using the get method, access the node at index - 1.
+- Set / update the next property on that node to be equal to the next of the next node.
+- Decrement the SLL length by 1. 
+- Return the removed node.
 
 
 
