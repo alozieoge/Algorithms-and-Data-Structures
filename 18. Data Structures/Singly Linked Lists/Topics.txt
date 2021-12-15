@@ -135,5 +135,16 @@ h. Remove(index)
 - Decrement the SLL length by 1. 
 - Return the removed node.
 
+i. Reverse()
+- Reverses a SLL in place. 
+- Involves traversing and reversing the SLL without duplication / copying-
 
+- Swap the head and tail nodes. 
+- Create new variables: next = null, previous = null.
+- Create a new variable: node = SLL.head.
+- Loop through the SLL (monkey swinging between branches):
+  - Set next = node.next 
+  - Set node.next = previous
+  - Set previous = node
+  - Set node = next
 
