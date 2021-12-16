@@ -263,6 +263,17 @@ class SinglyLinkedList {
         this.length--;
         return removed;
     }
+    
+    print() {
+        // Stores all the node values in the link sequence to an array and prints it.
+        var arr = [];
+        var current = this.head;
+        while (current) {
+            arr.push(current.value);
+            current = current.next;
+        }
+        console.log(arr);
+    }
 }
 
 
