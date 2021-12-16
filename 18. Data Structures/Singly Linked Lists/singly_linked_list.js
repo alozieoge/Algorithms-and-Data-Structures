@@ -274,6 +274,51 @@ class SinglyLinkedList {
         }
         console.log(arr);
     }
+    
+    reverse() {
+        // Define the function that accepts no arguments.
+        // Swap the head and tail nodes. 
+        // Create a variable called next.
+        // Create a variable called prev.
+        // Create a variable called node and initialize it to the old head property of the list.
+        // Loop through the list. 
+        // Set the next variable to be equal to the next property of the node variable. 
+        // Set the next property of the node variable to be equal to the prev variable.
+        // Set the prev variable to be equal to the node variable.
+        // Set the node variable to be equal to next variable.
+
+        // MEE
+//         var oldHead = this.head;
+//         this.head = this.tail;
+//         this.tail = oldHead;
+
+//         var next = null;
+//         var prev = null;
+//         var node = oldHead;
+
+//         for (var i = 0; i < this.length; i++) {
+// //             console.log(i);
+//             next = node.next;
+//             node.next = prev;
+//             prev = node;
+//             node = next;
+//         }
+
+        // CS
+        var node = this.head;
+        this.head = this.tail;
+        this.tail = node;
+        var next;
+        var prev = null; // the tail node should point to null.
+
+        for (var i = 0; i < this.length; i++) {
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;       
+        }
+        return this;
+    }
 }
 
 
