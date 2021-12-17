@@ -29,7 +29,7 @@ Objectives:
   
 4. DLL Operations
 
-a. Push()
+a. Push(value)
 - Adds a new node to the end of the DLL.
 - This new node becomes the tail.
 
@@ -43,8 +43,29 @@ c. Shift()
 - Similar to SLL, but also updating the `prev` pointer.
 - If the initial DLL length is 1, shift() is similar to pop().
 
-d. Unshift()
+d. Unshift(value)
 - Adds a new node to the beginning of the DLL. 
 - Similar to SLL, but also updating the `prev` pointer.
 - If the initial DLL length is 0, unshift() is similar to push().
+
+e. Get(index)
+- Accesses a node in the DLL by its position. 
+- Similar to SLL but can be optimized by starting traversal from either the head or the tail node, depending on which is closer to the index / position.
+
+f. Set(index, value)
+- Replaces the value of a node at a position in the DLL> 
+- Uses the get() method to optimize traversal and return the node to be updated.
+
+g. Insert(index, value)
+- Adds a new node to the DLL at a certain position. 
+- Uses the get() method.
+- Requires the next and prev properties to be updated.
+
+h. Remove(index)
+- Removes a node in a DLL at a certain position. 
+- Uses the get() method. 
+
+i. Print() 
+- Prints the node values of the DLL to the console.
+
 
