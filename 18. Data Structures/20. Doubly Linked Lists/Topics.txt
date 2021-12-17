@@ -1,0 +1,50 @@
+
+Objectives:
+- What is a Doubly Linked List.
+- Construct a Doubly Linked List.
+- Compare and contrast Doubly and Singly Linked Lists.
+- Implement basic operations on a Doubly Linked List.
+
+1. What is a Doubly-Linked List
+- It is identical to a Singly-Linked List, except each node has another pointer, to the previous node.
+
+
+2. DLL vs SLL
+- DLL provides more flexibility in certain linked list operations e.g. popping, reversing.
+- However, additional code / complexity is required to account for 'previous' referencing in DLL. 
+- DLL also requires more memory for storage due to additional information encoded.
+
+
+3. DLL class and methods
+- The node class has 3 properties:
+  - value: node value.
+  - next: pointer to the next node.
+  - prev: pointer to the previous node.
+
+- The DLL class has 3 properties:
+  - head: beginning of the DLL.
+  - tail: end of the DLL.
+  - length: length of the DLL.
+  
+  
+4. DLL Operations
+
+a. Push()
+- Adds a new node to the end of the DLL.
+- This new node becomes the tail.
+
+b. Pop()
+- Removes the node at the end of the DLL. 
+- The 2nd last node becomes the tail. 
+- Make sure to remove the `prev` pointer of the removed tail node to prevent ghost pointers in your code.
+
+c. Shift()
+- Removes a new node from the beginning of the DLL.
+- Similar to SLL, but also updating the `prev` pointer.
+- If the initial DLL length is 1, shift() is similar to pop().
+
+d. Unshift()
+- Adds a new node to the beginning of the DLL. 
+- Similar to SLL, but also updating the `prev` pointer.
+- If the initial DLL length is 0, unshift() is similar to push().
+
