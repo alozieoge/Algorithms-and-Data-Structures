@@ -1,0 +1,59 @@
+Objectives:
+- Define a stack.
+- Understand use cases for stacks. 
+- Implement basic operations for a stack data structure.
+
+
+1. What is a stack?
+- A stack is a data structure that implements LIFO (Last In, First Out) concept / paradigm.
+- The last element added to the stck will be the first element taken out of the stack e.g. stack of plates, books, boxes, ...
+
+
+2. Use Cases
+- Managing function invocations (Call Stack).
+- Undo / Redo functionality.
+- Routing (browser history object).
+- Intermediary data structure in Trees and Graphs.
+
+
+3. Array Implementation for Stacks
+- JS Arrays has built-in methods that support LIFO operations and can therefore represent stacks. 
+- Array.push() and Array.pop()
+- Array.unshift() and Array.shift()
+
+- Since shift() and unshift() have O(n) time complexity, it is preferable to use push() and pop() for stack implementation. 
+- Arrays also has properties and supports other methods that are not needed in stacks e.g. indexing / accessing, searching, etc.
+- Hence we can implement stacks from scratch using Linked Lists.
+ 
+
+4. Linked List Implementation for Stacks
+- Linked Lists are based on nodes and pointers. 
+- pop() method in the Singly-Linked List class has O(n) time complexity because it requires a loop over the length of the list.
+- It is preferable to copy and modify the shift() and unshift() methods from the SLL class to implement stacks, since these have O(1) time complexity.
+
+
+5. Stack class and methods
+- The stack comprises nodes built from the Node class with the following properties:
+  - value = node value
+  - next = reference / pointer to the next node.
+  
+- The stack class has the following properties:
+  - first = first value to leave the stack. 
+  - last = last value to leave the stack. 
+  - size = number of values in the stack.  
+
+a. push()
+- Add a value to the top of the stack. 
+
+b. pop()
+- Remove a value from the top of the stack.
+
+
+6. Big O for Stacks
+- Insertion = O(1)
+- Removal = O(1)
+- Accessing = O(n)
+- Searching = O(n)
+
+- Accessing and Searching are not relevant for Stacks.
+
