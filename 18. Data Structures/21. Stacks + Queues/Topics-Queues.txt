@@ -1,0 +1,60 @@
+Objectives:
+- Define a queue.
+- Understand use cases for queues. 
+- Implement basic operations for a queue data structure.
+
+1. What is a queue?
+- A queue is a data structure that implements FIFO (First In, First Out) concept / paradigm.
+- The first element added to the queue will be the first element taken out of the queue e.g. queue / line, ...
+
+
+2. Use Cases
+- Waiting to join an online game.
+- Background tasks e.g. downloading.
+- Uploading resources.
+- Printing / task processing.
+
+
+3. Array Implementation for Queues
+- JS Arrays has built-in methods that support FIFO operations and can therefore represent queues. 
+- Array.push() and Array.shift()
+- Array.unshift() and Array.pop()
+
+- Since shift() and unshift() require re-indexing of the array, they have O(n) time complexity. 
+- Hence it is preferrable to implement queues from scratch using Linked List class architecture.
+ 
+
+4. Linked List Implementation for Queues
+- Linked Lists are based on nodes and pointers. 
+- pop() method in the Singly-Linked List class has O(n) time complexity because it requires a loop over the length of the list.
+- It is preferable to copy and modify the push() and shift() methods from the SLL class to implement queues, since these have O(1) time complexity.
+
+
+5. Queue class and methods
+- The queue comprises nodes built from the Node class with the following properties:
+  - value = node value
+  - next = reference / pointer to the next node.
+  
+- The queue class has the following properties:
+  - first = first value to leave the queue. 
+  - last = last value to leave the queue. 
+  - size = number of values in the queue.  
+
+a. enqueue()
+- Add a value towards the front of the queue. 
+
+b. dequeue()
+- Remove a value from the front of the queue.
+
+
+6. Big O for Queue
+- Insertion = O(1)
+- Removal = O(1)
+- Accessing = O(n)
+- Searching = O(n)
+
+- Accessing and Searching are not relevant for queue.
+- Both implementation for stacks and queues involve removal from the the 'first' property of the SLL.
+- However, 
+  - In Stacks, nodes are added from the first node, 
+  - In Queues, nodes are added from the last node.
