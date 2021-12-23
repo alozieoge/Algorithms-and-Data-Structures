@@ -1,0 +1,66 @@
+Objectives:
+- What is a tree?
+- Compare and contrast trees and lists.
+- Tree terminology.
+- Understand use cases for trees.
+- Binary Trees and Binary Search Trees.
+- Implement operations for a binary search tree data structure.
+
+
+1. What is a Tree?
+A tree is a data structure that consists of nodes in a parent-child relationship.
+
+
+2. Trees vs Lists
+- Lists are linear i.e. a node has only 1 next node and/or 1 previous node.
+- Trees are non-linear i.e. a node can have multiple children.
+  - A singly-linked list is a special (linear) case of a tree.
+  
+  
+3. Terminology
+- Node: Contains a value.
+- Root: Top-most node in a tree.
+- Child: Node directly connected to another node when moving way from the root.
+- Parent: Converse notion of a child.
+- Siblings: Group of nodes with the same parent.
+- Leaf: Node with no children. 
+- Edge: Connection between parent and child.
+
+
+4. Use Cases for Trees
+- HTML DOM
+- Network routing
+- Abstract syntax tree
+- AI (Decision trees, Random forest)
+- Folders in operating system
+- Computer file system
+- JSON
+- YAML
+
+
+5. Binary Tree / Binary Search Tree
+- A Binary Tree is a tree in which each node has a maximum of 2 child nodes.
+
+- A Binary Search Tree (BST) is a binary tree in which the nodes are sorted in a particular order:
+  - Every parent node has at most 2 children (binary tree). 
+  - Every node to the left of the parent node is always less than the parent. 
+  - Every node to the right of the parent node is always greater than the parent. 
+
+6. Binary Search Tree Class and Methods
+- A Node class has 3 propertes:
+  - value: value of the node
+  - left: node to the left.
+  - right: node to the right.
+  
+- A BST class has only 1 property:
+  - root: first/top-most node.
+  
+a. insert(value)
+- Inserts a new node with the passed value in the appropriate position, according to the rules, in the BST.
+- Can be implemented iteratively or recursively.
+
+Note: Changing the property of a copy of an object also changes the corresponding property in the original object (mutability).
+
+b. find(value)
+- Searches for a node value in a BST.
+
