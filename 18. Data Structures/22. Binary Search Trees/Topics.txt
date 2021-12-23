@@ -63,4 +63,16 @@ Note: Changing the property of a copy of an object also changes the correspondin
 
 b. find(value)
 - Searches for a node value in a BST.
+- Also used to find if a value exists or not.
 
+
+7. Big O Time Complexity for BST
+Best / Average Case:
+- Insertion = O(log n)
+- Searching = O(log n)
+
+Worst Case: Results from a 1-sided tree.
+- Insertion = O(n)
+- Searching = O(n)
+
+- Solution: Re-construct the BST with a different node having the median value.
