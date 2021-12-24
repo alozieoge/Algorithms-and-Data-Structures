@@ -1,0 +1,68 @@
+Q. How do we visit (store the value) every node in a tree only once?
+A. They are many ways to ado this.
+
+2 Main Approaches
+1. Breadth-First Search (BFS)
+2. Depth-First Search (DFS)
+   a. PreOrder
+   b. PostOrder
+   c. InOrder
+   
+Example Tree:
+     10
+    /  \
+   6    15
+ /   \    \
+3     8    20
+
+1. BFS 
+- Iteratively: 
+  - Visit every sibling node
+  - Traverse to the child node
+>> [10, 6, 15, 3, 8, 20]
+
+
+2. DFS
+- Vist and traverse nodes vertically. 
+- The order of visiting nodes (storing node values) will determine the sequence of result array.
+
+a. PreOrder:
+- Recursively: (Node->Left->Right)
+  - Visit each node
+  - Traverse left branch
+  - Traverse right branch
+>> [10, 6, 3, 8, 15, 20]
+
+b. PostOrder:
+- Recursively: (Left->Right->Node)
+  - Traverse left branch
+  - Traverse right branch
+  - Visit each node
+>> [3, 8, 6, 20, 15, 10]
+
+c. InOrder:
+- Recursively: (Left->Node->Right)
+  - Traverse left branch
+  - Visit each node
+  - Traverse right branch
+>> [3, 6, 8, 10, 15, 20]
+
+
+3. BFS vs DFS
+a. Time Complexity:
+- Both BFS and DFS have O(n) time complexity. 
+
+b. Space Complexity:
+- If the tree is wider than it is long/deep, DFS is better because it has fewer nodes to keep track of. 
+  (1 root-to-leaf branch of nodes per maximum call stack size). 
+- If the tree is deeper than it is wide, BFS is better because it has fewer nodes to keep track of in the queue. 
+  (1 node per iteration in a singly-linked list).
+
+c. DFS Types:
+- InOrder: 
+  - Used commonly with Binary Search Trees (BST's). 
+  - Returns the nodes in their underlying order in the tree.
+  
+- PreOrder:
+  - Preserves the order of nodes in a tree.
+  - Can be used to serialize and export a tree structure so that it is easily recontructed or copied. 
