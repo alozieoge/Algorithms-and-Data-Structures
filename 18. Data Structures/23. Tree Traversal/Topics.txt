@@ -48,4 +48,21 @@ c. InOrder:
 >> [3, 6, 8, 10, 15, 20]
 
 
-   
+3. BFS vs DFS
+a. Time Complexity:
+- Both BFS and DFS have O(n) time complexity. 
+
+b. Space Complexity:
+- If the tree is wider than it is long/deep, DFS is better because it has fewer nodes to keep track of. 
+  (1 root-to-leaf branch of nodes per maximum call stack size). 
+- If the tree is deeper than it is wide, BFS is better because it has fewer nodes to keep track of in the queue. 
+  (1 node per iteration in a singly-linked list).
+
+c. DFS Types:
+- InOrder: 
+  - Used commonly with Binary Search Trees (BST's). 
+  - Returns the nodes in their underlying order in the tree.
+  
+- PreOrder:
+  - Preserves the order of nodes in a tree.
+  - Can be used to serialize and export a tree structure so that it is easily recontructed or copied. 
