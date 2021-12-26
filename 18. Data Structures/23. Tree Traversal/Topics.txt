@@ -8,7 +8,7 @@ A. They are many ways to ado this.
    b. PostOrder
    c. InOrder
    
-Example Tree:
+Example (Binary) Tree:
      10
     /  \
    6    15
