@@ -34,3 +34,28 @@ Why we need binary heaps?
 - Conversely, for any child node at index n:
   - its parent is stored at index: floor((n - 1)/2)
 
+
+3. Max Binary Heap Class and Methods
+- The MaxBinaryHeap class has only 1 property:
+  - values = []  // initialized as an empty array.
+
+
+a. insert(value)
+- Inserts a value into the max binary heap.
+
+Steps:
+- Add value to the end of the array.
+- 'Bubble up' the value to the correct position by comparing and swapping with the parent node at each step.
+
+
+b. extractMax() / removeRoot()
+- Removes the maximum value (root) from and readjusts the max binary heap.
+
+Steps:
+- Remove the root value. 
+- Replace it with the most recently added value. 
+- Adjust the heap so the root moves to its correct position (sink down).
+  - Sink down procedure: 
+    + Compare the node with its 2 child nodes.
+    + Swap it with the largest of the 2 child nodes, else stop. 
+    + Repeat. 
