@@ -1,0 +1,86 @@
+Objectives:
+- What is a hash table? 
+- What is a hashing function / algorithm?
+- What makes a good hashing algorithm? 
+- How do collisions occur in a hash table?
+- How to handle collisions using separate chaining or linear probing.
+
+1. What is a hash table?
+- A hash table / hash map is a data collection of key-value pairs. 
+
+Why learn about hash tables?
+- They are extremely fast for inserting, removing and accessing data. 
+- Most programming languages have an in-built hash table implementation. 
+  Python          |-> Dicts
+  JS              |-> Objects and Maps
+  Java, Go, Scala |-> Maps
+  Ruby            |-> Hashes
+  
+Implementing a Hash Table 
+- A hash table can be implemented using an array or list, which stores the hashes of the key for the input element.
+- This is referred to as a hash array. 
+
+
+2. Hash Function
+- A hash function is an algorithm that maps input data of arbitrary size/length to give an output of fixed size. 
+- It should not be reversible i.e. you cannot derive the input from the output.
+
+
+3. What makes a good hash function?
+a. Fast i.e. constant time. 
+b. Uniform distribution of key hashes i.e. does not cluster hashes at specific indices in the hash table array. 
+c. Deterministic i.e. same input yields the same output everytime.
+
+- Prime numbers are used as multiplying constants in hash functions because they promote spreading out the key hashes more uniformly. 
+- It is also helpful if the hash array length is a prime number.
+
+
+4. Collisions
+- Collision occurs when 2 or more keys are hashed to the same index in the hash array. 
+- Collisions are inevitable even with large hash arrays and advanced hash functions.
+
+Methods for handling collision
+a. Separate Chaining:
+- At each index in the hash array, store values using a similar or more sophisticated data structure e.g. an array or linked list.
+- Allows to store multiple key-value pairs at the same index in the hash array. 
+
+b. Linear Probing:
+- When a collision occurs, find the next / previous empty slot to store the key-value pair. 
+- Only allows to store a single key-value pair at each index in the hash array.
+
+
+5. Hash Table Class
+- The HashTable class has only 1 property:
+  - keyMap = new Array(size) // array size is usually set to a prime number by default.
+  
+a. _hash(key):
+- Hashing algorithm / function that returns the hash (index to the hash array) for a given key.
+
+b. set(key, value):
+- Stores the key-value pair in the hash table array. 
+
+c. get(key):
+- Returns the value of the given key if it exists in the hash table array. 
+
+d. keys():
+- Returns the array of keys in the hash table. 
+- Setting a duplicate key in the key-value pair should overwite the value for the existing key.
+
+e. values():
+- Returns the array of values, without duplicates, in the hash table. 
+
+
+6. Big O Time Complexity for Hash Tables
+Best / Average Case:
+- Insertion = O(1)
+- Deletion = O(1) 
+- Accessing = O(1)
+- Searching:
+  - Keys = O(1)
+  - Values = O(n)
+  
+Worst Case:
+- Depends on speed of the hashing function and distribution of hashes in the hash table array.
+ 
+Recommendation: 
+- Always use the built-in hash table implementation for a given programming language.
