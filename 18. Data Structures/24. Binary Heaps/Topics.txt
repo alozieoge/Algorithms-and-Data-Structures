@@ -6,7 +6,7 @@ Objectives:
 
 
 1. What is a binary heap?
-- A binar heap is a tree data structure similar to a binary search tree, but with different ordering rules. 
+- A binary heap is a heap, which is a tree data structure similar to a binary search tree, but with different ordering rules. 
 
 - Max Binary Heap: Parent nodes are always larger than child nodes.
 - Min Binary Heap: Parent nodes are always smaller than child nodes.
@@ -18,6 +18,8 @@ c. There is no guaranteed order between sibling nodes (nodes on the same level).
 d. A binary heap is as compact as possible. 
    All the children of each node are as full as can be. 
    Left child nodes are always filled first before right child nodes.
+   
+- A binary heap is an always-balanced binary tree.
    
 Why we need binary heaps?
 - Used to implement Priority Queues, a commonly used data structure.
@@ -39,14 +41,12 @@ Why we need binary heaps?
 - The MaxBinaryHeap class has only 1 property:
   - values = []  // initialized as an empty array.
 
-
 a. insert(value)
 - Inserts a value into the max binary heap.
 
 Steps:
 - Add value to the end of the array.
 - 'Bubble up' the value to the correct position by comparing and swapping with the parent node at each step.
-
 
 b. extractMax() / removeRoot()
 - Removes the maximum value (root) from and readjusts the max binary heap.
@@ -59,3 +59,47 @@ Steps:
     + Compare the node with its 2 child nodes.
     + Swap it with the largest of the 2 child nodes, else stop. 
     + Repeat. 
+
+
+4. Priority Queues
+- A priority queue is a data structure where each element has a priority associated with it. 
+- Elements with higher priorities are served (worked on) before elements with lower priorities.
+
+- A priority queue is an abstract concept / construct that can be implemented using an array, list or binary heap. 
+
+a. Naive Implementation of Priority Queues:
+- Insertion / Removal = O(n)
+
+b. Binary Heap Implementation:
+- Insertion / Removal = O(log n)
+
+
+5. Priority Queue Class and Methods
+Node class:
+- Properties:
+  - value
+  - priority
+
+PriorityQueue class:
+- Similar to the MinBinaryHeap class.
+- Property:
+  - values = []
+
+a. enqueue(value, priority)
+- Inserts a node having a value and a priority at the correct position. 
+- Same as the insert(value) method in the MinBinaryHeap class, but comparison between parent and child nodes is based on the priority property.
+
+b. dequeue()
+- Removes the root node from the priority queue. 
+- Same as the extractMax() method in the MinBinaryHeap class, but comparison between parent and child nodes is based on the priority property.
+
+
+6. Big O Time Complexity of Binary Heaps
+- Insertion: O(log n)
+- Removal: O(log n)
+- Search: O(n) 
+
+- Insertion and removal operations are O(log n) time complexity even in the worst case, because the binary heap is always left-and-right balanced by definition. 
+
+- Search is O(n) because there is no guaranteed order between sibling nodes on the same level. 
+  - In the worst case, the whole binary heap will be traversed to find an element.
