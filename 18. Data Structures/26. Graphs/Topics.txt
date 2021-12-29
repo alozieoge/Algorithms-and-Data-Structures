@@ -42,7 +42,7 @@ a. Adjacency Matrix
 - Adding a new vertex to the graph involves adding a new row and column to the adjacency matrix.
 
 b. Adjacency List
-- Uses a nested array or hash table of arrays to store the connected / adjacent vertices for a given vertex.
+- Uses a nested array / list or a hash table of arrays / lists to store the connected / adjacent vertices for a given vertex.
 - Improved space-time complexity.
 
 
