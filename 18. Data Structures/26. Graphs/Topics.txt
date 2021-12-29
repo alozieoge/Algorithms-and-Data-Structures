@@ -1,0 +1,65 @@
+Objectives:
+- What is a graph?
+- Compare and contrast different types of graphs and their use cases. 
+- Implement a graph data structure using an adjacency list. 
+- Traverse through a graph using BFS and DFS. 
+- Compare and contrast graph traversal algorithms. 
+
+1. What is a graph?
+- A graph is a data structure that consists of: 
+  - a finite (and possibly mutably) set of vertices / nodes / points, together with:
+    - a set of unordered pairs of these vertices for an undirected graph, or
+    - a set of ordered pairs of vertices for a directed graph.
+    
+Graphs = Nodes + Connections 
+
+- A tree is a type of graph, having a root (entry) node and parent-child connections.
+- In a tree, all nodes are connected by only 1 path.
+- In a graph, each node can be connected by more than 1 path. 
+
+
+2. Uses for Graphs
+- Social netoworks
+- Location / mapping
+- Network routing algorithms
+- Visual hierarchy
+- File system optimizations
+- Internet webpage structure
+- Recommendation engines
+
+
+3. Graph Terminology
+- Vertex: Node
+- Edge: Connection between nodes
+- Weighted / Unweighted: Values assigned to the distances / edges between nodes. 
+- Directed / Undirected: Directions assigned to the distances / edges between nodes. 
+
+
+4. Graph Representation
+a. Adjacency Matrix
+- Graph structure is represented by a 2-D matrix; nested array.
+- Edge information is stored in the cells and accessed by row and column value. 
+- Adding a new vertex to the graph involves adding a new row and column to the adjacency matrix.
+
+b. Adjacency List
+- Uses a nested array / list or a hash table of arrays / lists to store the connected / adjacent vertices for a given vertex.
+- Improved space-time complexity.
+
+
+4. Adjacency List vs Adjacency Matrix
+Big O Space-Time Complexity:
+
+| Operation     | Adjacency List | Adjacency Matrix |
+|---------------+----------------+------------------|
+| Add vertex    | O(1)           | O(V^2)           |
+| Add edge      | O(1)           | O(1)             |
+| Remove vertex | O(V+E)         | O(V^2)           |
+| Remove edge   | O(E)           | O(1)             |
+| Query         | O(V+E)         | O(1)             |
+| Storage       | O(V+E)         | O(V^2)           |
+
+V = number of vertices
+E = number of edges
+
+- Big O (Space-Time complexity) in adjacency matrices depends on the number of vertices only, which determines the number of matrix rows and columns.
+- Use adjacency lists and not adjacency matrices for larger, sparsely-connected (sparse) graphs. 
