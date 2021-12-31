@@ -46,7 +46,7 @@ b. Adjacency List
 - Improved space-time complexity.
 
 
-4. Adjacency List vs Adjacency Matrix
+5. Adjacency List vs Adjacency Matrix
 Big O Space-Time Complexity:
 
 | Operation     | Adjacency List | Adjacency Matrix |
@@ -63,3 +63,23 @@ E = number of edges
 
 - Big O (Space-Time complexity) in adjacency matrices depends on the number of vertices only, which determines the number of matrix rows and columns.
 - Use adjacency lists and not adjacency matrices for larger, sparsely-connected (sparse) graphs. 
+
+
+6. Graph Class
+- The adjacency list implementation of the undirected Graph class has 1 property:
+  - this.AdjacencyList = {} // An empty hash table. 
+  
+a. addVertex(vertex):
+- Adds / inserts a vertex to the graph. 
+
+b. addEdge(vertex1, vertex2):
+- Adds / inserts an edge between 2 vertices in the graph.
+
+c. removeEdge(vertex1, vertex2):
+- Removes an edge between 2 vertices in the graph.
+
+d. removeVertex(vertex):
+- Removes a vertex from the graph. 
+- Calls the removeEdge() for each adjacent vertex to the removed vertex. 
+
+
