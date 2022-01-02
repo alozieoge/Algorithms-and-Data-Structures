@@ -67,7 +67,7 @@ E = number of edges
 
 6. Graph Class
 - The adjacency list implementation of the undirected Graph class has 1 property:
-  - this.AdjacencyList = {} // An empty hash table. 
+  - this.AdjacencyList = {}   // Initialized as an empty hash table. 
   
 a. addVertex(vertex):
 - Adds / inserts a vertex to the graph. 
