@@ -81,3 +81,5 @@ c. removeEdge(vertex1, vertex2):
 d. removeVertex(vertex):
 - Removes a vertex from the graph. 
 - Calls the removeEdge() for each adjacent vertex to the removed vertex. 
+
+
