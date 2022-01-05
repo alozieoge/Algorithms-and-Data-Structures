@@ -1,0 +1,20 @@
+Graph traversal = visiting / updating / checking each node in a graph.
+
+Applications
+- Peer-to-peer networking
+- Web crawlers
+- Finding closest match / recommendation
+- Shortest path problem
+  - GPS naviation
+  - Solving mazes
+  - AI (shortest path to win a game)
+  
+
+1. Depth First Traversal
+- Explore as far as possible down one branch before 'backtracking'.
+  - Prioritize visiting adjacent vertices to a node/vertex before sibling nodes/vertices.
+- Can be implemented recursively or iteratively. 
+
+ O
+/|\
+/ \
