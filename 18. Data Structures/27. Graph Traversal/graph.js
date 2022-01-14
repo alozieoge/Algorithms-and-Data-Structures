@@ -156,12 +156,9 @@ class Graph { // Undirected
                     visited[neighbor] = true;
                     stack.push(neighbor);
                 }
-            })
+            });
         }
         return result;
-    }
-
-
     }
 
 }
