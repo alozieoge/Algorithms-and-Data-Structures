@@ -56,7 +56,9 @@ class Graph { // Undirected
         delete this.adjacencyList[vertex];
     }
 
-    DFSRecursive(startVertex) {
+    // Graph Traversal Methods
+    
+    DFTRecursive(startVertex) {
         // Write a function that accepts a starting vertex. 
         // Create a list to store the results to be returned at the end. 
         // Create an object to store the visited vertices. 
@@ -106,7 +108,7 @@ class Graph { // Undirected
         return result;
     }
 
-    DFSIterative(startVertex) {
+    DFTIterative(startVertex) {
         // Write a function that accepts a starting node. 
         // Create a stack to help use keep track of vertices (use a list/array)
         // Create a list / array to store the end result, to be returned at the very end
@@ -160,6 +162,45 @@ class Graph { // Undirected
         }
         return result;
     }
+    
+    BFTIterative(startVertex) {
+        // Write a function that accepts a starting vertex. 
+        // Create a queue to keep track of vertices (use a list/array)
+        // Create a list / array to store the end result, to be returned at the very end
+        // Create an object to store the visited vertices. 
+        // Add the starting vertex to the queue, and mark it as visited. 
+        // While the queue has something in it:
+        // - Remove (shift) the first vertex from the queue. 
+        // - Push the vertex to the result array.
+        // - Loop over each vertex in the adjacency list for the visted vertex: 
+        //   - If that vertex hasn't been visted yet:
+        //     - Mark it as visited. 
+        //     - Enqueue the vertex. 
+        // Return the result array of visited vertices.
+
+        // MEE
+        const queue = [startVertex];
+        const result = [];
+        const visited = {};
+        let currentVertex;
+
+        visited[startVertex] = true;
+
+        while (queue.length) {
+//             console.log(queue);
+            currentVertex = queue.shift();
+            result.push(currentVertex);
+//             this.adjacencyList[currentVertex].slice().reverse().forEach(neighbor => { // to traverse adjacent vertices from right to left
+            this.adjacencyList[currentVertex].forEach(neighbor => { // to traverse adjacent vertices from left to right
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    queue.push(neighbor);
+                }
+            });
+        }
+
+        return result;
+    }
 
 }
 
@@ -180,5 +221,14 @@ g.addEdge("D", "E");
 g.addEdge("D", "F");
 g.addEdge("E", "F");
 
-// g.DFSRecursive("A");
+//      A
+//    /   \
+//   B     C
+//   |     |
+//   D --- E
+//    \   /
+//      F
 
+// g.DFTRecursive("A");
+// g.DFTIterative("A");
+// g.BFTIterative("A");
