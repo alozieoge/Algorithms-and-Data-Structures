@@ -1,0 +1,24 @@
+Objectives:
+1. Understand the importance of Dijkstra's algorithm. 
+2. Implement a Weighted Graph. 
+3. Walk through the steps of Dijkstra's algorithm. 
+4. Implement Dijkstra's algorithm using a naive Priority Queue. 
+5. Implement Dijkstra's algorithm using a Binary Heap Priority Queue.
+
+What is Dijkstra's Algorithm?
+- It finds the shortest path between 2 vertices / nodes in a weighted graph
+- Answers the question "What is the fastest way to go from point A to point B?"
+- Developed by Edsger Dijkstra (Dutch)
+
+Importance of Dijktra's algorithm
+- GPS: Find fastest route. 
+- Network routing: Find open shortest path for data transfer. 
+- Biology: Model the spread of viruses among humans. 
+- Airlinr tickets: Find cheapest route to a destination. 
+...
+
+Weighted Graph Class
+In a weighted graph, each edge has an associated number / value representing the distance between the connected vertices / nodes.
+
+Walkthrough of Dijkstra's algorithm
+1. 
