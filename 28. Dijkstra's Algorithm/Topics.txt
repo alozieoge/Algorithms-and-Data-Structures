@@ -21,3 +21,4 @@ Weighted Graph Class
 In a weighted graph, each edge has an associated number / value representing the distance between the connected vertices / nodes.
 
 Walkthrough of Dijkstra's algorithm
+1. 
