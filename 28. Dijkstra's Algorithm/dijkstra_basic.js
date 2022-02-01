@@ -155,7 +155,7 @@ class WeightedGraph {
         }
 
         // console.log(path);
-        return path.concat(smallest).reverse()
+        return path.concat(smallest).reverse();
 
     }
 }
