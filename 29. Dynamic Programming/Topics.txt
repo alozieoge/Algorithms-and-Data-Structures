@@ -25,7 +25,7 @@ Meaning: The process of solving problems by finding the best decisions, one afte
 - A problem has optimal sub-structure if an optimal solution can be constructed from optimal solutions of its sub-problems. 
 - Involves solution within a solution e.g. shortest path in a graph.
 
-Recursive Functions
+4. Recursive Functions
 - The Fibonacci sequence can be written as a recursive function. 
 
 Requirements:
@@ -41,5 +41,11 @@ Fib(1) = 1
    /      \
 fib(2) + fib(1)
 
+Big O Time Complexity
+- The Big O time complexity of the recursive implementation of the Fibonacci sequence grows exponentially with increasing n i.e. O(2^n).
+- It is actually ~ O(1.618^n) i.e. an exponential of the Golden Ratio.
 
+5. Implementations of Dynamic Programming
+a. Memoization
+b. Tabulation
 
