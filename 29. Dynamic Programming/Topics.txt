@@ -1,0 +1,45 @@
+Objectives:
+- What is dynamic programming?
+- What are overlapping subproblems?
+- What is optimal substructure?
+- Solve challenging problems using dynamic programming. 
+
+1. What is dynamic programming?
+- A method / approach / pattern for solving a complex problem by: 
+  - breaking it down into a collection of simpler sub-problems, 
+  - solving each of those sub-problems just once and 
+  - storing / remembering their solutions. 
+
+- Dyanmic programming only works on problems with:
+  - Overlapping sub-problems
+  - Optimal sub-structure
+
+Origin: Richard Bellman, USA (1940s - 1950s). 
+Meaning: The process of solving problems by finding the best decisions, one after another (Multi-stage decision process). 
+
+2. Overlapping sub-problems
+- A problem has overlapping sub-problems if it can be broken down into sub-problems which are reused several times. 
+- Involves repetitions / duplications e.g. Fibonacci sequence.
+
+3. Optimal sub-structure
+- A problem has optimal sub-structure if an optimal solution can be constructed from optimal solutions of its sub-problems. 
+- Involves solution within a solution e.g. shortest path in a graph.
+
+Recursive Functions
+- The Fibonacci sequence can be written as a recursive function. 
+
+Requirements:
+Fib(n) = Fib(n-1) + Fib(n-2)
+Fib(2) = 1
+Fib(1) = 1
+
+                  fib(5)
+             /            \
+         fib(4)     +    fib(3)
+        /     \         /     \
+    fib(3) + fib(2)  fib(2) + fib(1)
+   /      \
+fib(2) + fib(1)
+
+
+
