@@ -47,5 +47,8 @@ Big O Time Complexity
 
 5. Implementations of Dynamic Programming
 a. Memoization
+- Storing the results of computationally expensive function calls and returning the cached result when the same input occurs again.
+- Big O time complexity for a memoized Fibonacci sequence is O(n) since the fib() of a number is only calculated once.
 
 b. Tabulation
+- 
