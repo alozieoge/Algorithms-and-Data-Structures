@@ -51,4 +51,5 @@ a. Memoization
 - Big O time complexity for a memoized Fibonacci sequence is O(n) since the fib() of a number is only calculated once.
 
 b. Tabulation
-- 
+- Storing the result of a previous calculation in a table or array. 
+- Usually done with iteration; bottom-up.
