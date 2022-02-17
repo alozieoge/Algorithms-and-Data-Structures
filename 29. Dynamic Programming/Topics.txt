@@ -53,3 +53,6 @@ a. Memoization
 b. Tabulation
 - Storing the result of a previous calculation in a table or array. 
 - Usually done with iteration; bottom-up.
+
+
+For a very large number, n, the memoized version of the Fibonacci sequence recursive calculation will result in a Stck Overflow error as the recursive function calls aree stored in the Call Stack.
